@@ -9,7 +9,7 @@
             <Setter Property="CornerRadius" Value="10" />
             <Setter Property="Padding" Value="0" />
         </Style>
-        
+
         <Style x:Key="itemStyle" TargetType="HorizontalStackLayout">
             <Setter Property="Background" Value="#e7defc" />
             <Setter Property="Padding" Value="20,20" />
@@ -36,8 +36,8 @@
                     <HorizontalStackLayout.GestureRecognizers>
                         <TapGestureRecognizer Tapped="ItemTapped"/>
                     </HorizontalStackLayout.GestureRecognizers>
-                    <CheckBox Style="{StaticResource itemCheckBoxStyle}"/>
-                    <Label Text="Zadanie" Style="{DynamicResource itemLabelStyle}"/>
+                    <CheckBox Style="{StaticResource itemCheckBoxStyle}" CheckedChanged="CheckBoxCheckedChange"/>
+                    <Label Text="Zadanie" Style="{StaticResource itemLabelStyle}"/>
                 </HorizontalStackLayout>
             </Frame>
 
@@ -46,8 +46,8 @@
                     <HorizontalStackLayout.GestureRecognizers>
                         <TapGestureRecognizer Tapped="ItemTapped"/>
                     </HorizontalStackLayout.GestureRecognizers>
-                    <CheckBox Style="{StaticResource itemCheckBoxStyle}"/>
-                    <Label Text="Zadanie2" Style="{DynamicResource itemLabelStyle}"/>
+                    <CheckBox Style="{StaticResource itemCheckBoxStyle}" CheckedChanged="CheckBoxCheckedChange"/>
+                    <Label Text="Zadanie2" Style="{StaticResource itemLabelStyle}"/>
                 </HorizontalStackLayout>
             </Frame>
         </VerticalStackLayout>
